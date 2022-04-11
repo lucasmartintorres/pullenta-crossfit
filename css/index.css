@@ -1,0 +1,963 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    font-family: 'Fira Sans Condensed', sans-serif;
+
+}
+
+body {
+    font-family: 'Fira Sans Condensed', sans-serif;
+}
+
+:root {
+    --color-white: #ffffff;
+    --color-orange--50: #ff7642;
+    --color-brown: #8c8270;
+    --color-gray: #362222;
+    --color-black-dark: #1B1A17;
+    --padding-x: 6.25rem;
+
+}
+
+.navbar {
+    height: 5rem;
+    width: 100vw;
+    background-color: var(--color-white);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    
+}
+
+
+
+.navbar .icono img {
+    width: 50%;
+    max-width: 7.5rem;
+    max-height: 7.5rem;
+    transition-duration: 0.5s;
+    z-index: 7;
+
+}
+
+.container-menu {
+    display: flex;
+    align-items: center;
+    height: 100%;
+
+}
+
+.menu {
+    display: flex;
+
+}
+
+.container-menu .menu {
+    list-style: none;
+    font-weight: 400;
+    font-size: 1.125rem;
+
+}
+
+.container-menu .menu li {
+    margin: 0.625rem;
+
+}
+
+.container-menu .menu li a {
+    text-decoration: none;
+    color: var(--color-black-dark);
+    font-weight: 700;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    transition-duration: 0.5s;
+
+}
+
+.container-menu .menu li a:hover {
+    color: #f94e0b;
+
+}
+
+.navbar .icono img:hover {
+    transform: rotate(180deg);
+
+}
+
+
+/* -------------------------------------------------------------- */
+
+.section-hero {
+    width: 100vw;
+    height: calc(100vh - 5rem);
+    background-color: var(--color-black-dark);
+    background-image: url(/assets/img/image-hero-crossfit.jpg);
+    background-repeat: repeat-y;
+    background-size: cover;
+    background-position: left;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+}
+
+.section-hero .icono {
+    width: auto;
+    height: auto;
+    z-index: 1;
+
+}
+
+.section-hero .icono img {
+    width: 70%;
+    margin-bottom: 1rem;
+    object-fit: contain;
+    transition-duration: 0.5s;
+
+
+}
+
+.section-hero .icono img:hover {
+    transform: rotate(90deg);
+
+}
+
+.section-hero .texto-hero {
+    color: var(--color-white);
+    width: 100%;
+    margin-bottom: 70px;
+    z-index: 1;
+
+}
+
+.texto-hero h1 {
+    font-size: 6rem;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    letter-spacing: 0.313rem;
+    font-weight: 600;
+    line-height: 4rem;
+
+}
+
+.texto-hero span {
+    font-size: 4rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-weight: 100;
+
+}
+
+.texto-hero .boton a {
+    text-decoration: none;
+    color: var(--color-white);
+
+}
+
+.texto-hero .boton {
+    width: 18%;
+    height: 25%;
+    background-color: #5463FF;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: 0.5s;
+    border-radius: 0.8rem;
+    color: var(--color-white);
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-top: 2.5rem;
+
+}
+
+.texto-hero .boton:hover {
+    background-color: #4c56c1;
+    border-radius: 0rem;
+
+}
+
+
+
+.section-hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(131, 58, 180);
+    background:
+        linear-gradient(90deg,
+            rgba(131, 58, 180, 1) 0%,
+            rgba(253, 29, 29, 1) 50%,
+            rgba(252, 176, 69, 1) 100%);
+    opacity: 0.6;
+
+}
+
+/* ------------------------------------------------------------ */
+
+.about {
+    padding: 6.25rem var(--padding-x);
+    width: 100vw;
+    background-color: var(--color-white)
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-gray);
+
+}
+
+.section-title {
+    font-size: 3.125rem;
+    color: var(--color-gray);
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-bottom: 1.125rem;
+
+}
+
+.container h2 span {
+    font-weight: 500;
+
+}
+
+.container h3 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    margin-top: 50px;
+
+}
+
+
+.container p {
+    font-size: 1.125rem;
+    margin-top: 1.125rem;
+
+}
+
+.container p a {
+    text-decoration: none;
+    color: var(--color-black-dark);
+    transition-duration: 0.7s;
+
+}
+
+.container p a:hover {
+    color: var(--color-orange--50);
+    cursor: pointer;
+
+}
+
+
+.container .boton a:hover {
+    color: var(--color-orange--50);
+
+
+}
+
+/* ---------------------------------------- */
+
+.section-beneficios {
+    padding: 6.25rem var(--padding-x);
+    width: 100vw;
+    background-image: url(/assets/img/image-section.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+
+.section-beneficios::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(131, 58, 180);
+    background:
+        linear-gradient(90deg,
+            rgba(131, 58, 180, 1) 0%,
+            rgba(253, 29, 29, 1) 50%,
+            rgba(252, 176, 69, 1) 100%);
+    opacity: 0.4;
+
+}
+
+.section-beneficios * {
+    position: relative;
+    z-index: 1;
+
+}
+
+.container-beneficios {
+    max-width: 75rem;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-white);
+
+}
+
+.title-beneficios {
+    font-size: 3.125rem;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-bottom: 1.25rem;
+
+}
+
+.beneficios-cardcontainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 275px));
+    gap: 5%;
+    justify-content: center;
+    margin: 5rem 0;
+
+}
+
+.beneficios-cardgrid {
+    width: 100%;
+    background-color: #ffffff;
+    display: grid;
+    grid-template-rows: 200px auto;
+    padding: 2.188rem;
+    gap: 2%;
+    cursor: pointer;
+
+}
+
+.beneficios-card-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.25rem;
+
+}
+
+.beneficios-card-img img {
+    width: 100%;
+    height: 100%;
+    max-height: 10.625rem;
+    max-width: 10.625rem;
+    transition-duration: 0.8s;
+
+}
+
+.beneficios-card-img img:hover {
+    transform: scale(120%);
+
+}
+
+.beneficios-card-text h3 {
+    font-size: 2.18rem;
+    font-weight: 600;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    color: var(--color-black-dark)
+}
+
+/* ------------------------------------------------- */
+
+.section-clases {
+    padding: 6.25rem var(--padding-x);
+    width: 100vw;
+    background-color: var(--color-black-dark);
+
+}
+
+.galeria {
+    display: grid;
+    gap: 2%;
+    grid-auto-rows: 20rem;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 320px));
+    justify-content: center;
+    margin: 80px 0;
+
+}
+
+
+.card-galeria {
+    width: 100%;
+    gap: 0.938rem;
+
+}
+
+.card-galeria img {
+    width: 100%;
+    height: 100%;
+
+}
+
+.container-beneficios a {
+    color: var(--color-white);
+    font-size: 1.5rem;
+    text-decoration: none;
+
+}
+
+
+.seguinos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-decoration: none;
+    font-size: 1.5rem;
+
+}
+
+.seguinos a {
+    text-decoration: none;
+    color: #ffff;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    font-size: 1.5rem;
+
+
+}
+
+.seguinos .fa-instagram {
+    color: #ffff;
+    font-size: 1.5rem;
+
+}
+
+
+
+/* ----------------------------------------------------------------- */
+
+.contact-section {
+    background: rgb(131, 58, 180);
+    background:
+        linear-gradient(90deg,
+            rgba(131, 58, 180, 1) 0%,
+            rgba(253, 29, 29, 1) 50%,
+            rgba(252, 176, 69, 1) 100%);
+    padding: 6.25rem var(--padding-x);
+    width: 100vw;
+
+}
+
+.contact-formContainer {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    justify-content: center;
+    margin-top: 5rem;
+
+}
+
+.contact-formContainer-img {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+.contact-formContainer-img img {
+    width: 60%;
+    max-width: 29.375;
+    object-fit: contain;
+
+}
+
+.contact-formContainer-form {
+    display: flex;
+
+}
+
+.contact-formContainer-form form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    font-family: 'Fira Sans Condensed', sans-serif;
+
+}
+
+.contact-formContainer-form form input,
+textarea {
+    border: none;
+    outline: none;
+    font-size: 1.25rem;
+    width: 80%;
+    padding: 0.625rem 1.25rem;
+    margin: 0 0 1.125rem 0;
+    color: rgba(0, 0, 0, 0.4);
+
+}
+
+
+.contact-formContainer-form .boton {
+    width: 30%;
+    height: 10%;
+    background-color: #5463FF;
+    border: none;
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: 0.5s;
+    color: var(--color-white);
+    font-family: 'Fira Sans Condensed', sans-serif;
+    margin-top: 2.5rem;
+    border-radius: 0.8rem;
+
+}
+
+
+.contact-formContainer-form .boton:hover {
+    background-color: #111eae;
+    border-radius: 0rem;
+
+}
+
+
+
+/* ----------------------------------------------------------- */
+
+.container-footer {
+    width: 100vw;
+    height: 5.625rem;
+    background-color: var(--color-black-dark);
+
+}
+
+footer {
+    width: 100%;
+    height: 100%;
+    font-size: 1.563rem;
+    font-weight: 100;
+    color: var(--color-white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+
+
+footer p .ir-arriba {
+    text-decoration: none;
+    color: var(--color-white);
+    transition-duration: 0.7s;
+
+}
+
+
+footer p .ir-arriba:hover {
+    color: var(--color-orange--50);
+
+}
+
+footer .iconos-contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+a .fa-instagram {
+    margin: 1.25rem;
+    transition-duration: 0.7s;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+footer .fa-instagram:hover {
+    color: var(--color-orange--50);
+    cursor: pointer;
+
+}
+
+
+a .fa-whatsapp {
+    margin: 1.25rem;
+    transition-duration: 0.7s;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+footer .fa-whatsapp:hover {
+    color: var(--color-orange--50);
+    cursor: pointer;
+
+}
+
+a .fa-envelope {
+    margin: 1.25rem;
+    transition-duration: 0.7s;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+footer .fa-envelope:hover {
+    color: var(--color-orange--50);
+    cursor: pointer;
+
+}
+
+
+p .developer {
+    transition-duration: 0.8s;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+.developer:hover {
+    color: #5463FF;
+    cursor: pointer;
+
+}
+
+/* ------------------------------------------------------------- */
+
+/* Menu burger */
+
+.menu-mobile {
+    display: none;
+}
+
+
+/* --------------------------------------------------------- */
+
+/* BREAKPOINTS */
+
+@media screen and (max-width: 1024px){
+    .texto-hero .boton {
+        width: 25%;
+    
+    } 
+
+    .contact-formContainer-form .boton {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
+    .container-menu .menu {
+        font-size: 1rem;
+    }
+
+    .section-hero .icono img {
+        width: 65%;
+    }
+
+    .texto-hero .boton {
+        width: 25%;
+        height: 25%;
+    }
+
+    texto-hero .boton {
+        font-size: 1.2rem;
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    :root {
+        --padding-x: 4rem;
+    }
+
+    .container-menu {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .menu-mobile {
+        display: block;
+        z-index: 10;
+
+    }
+
+    .menu-mobile .fa-bars {
+        font-size: 2.5rem;
+        color: var(--color-brown);
+        transition: 0.3s;
+    }
+
+    .menu-mobile .fa-bars:hover {
+        font-size: 2.5rem;
+        color: #8c8270;
+    }
+
+    .menu-mobile ul {
+        display: none;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        
+    }
+
+    .menu-mobile input:checked~ul {
+        display: block;
+        
+    }
+
+    .menu-mobile input {
+        display: none;
+    }
+
+    .menu-mobile label {
+        box-sizing: border-box;
+        display: inline-block;
+        font-weight: bold;
+        text-align: center;
+        user-select: none;
+    }
+
+    .menu-mobile ul li {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background: rgb(82,97,243);
+        background: linear-gradient(90deg, rgba(82,97,243,1) 10%, rgba(84,99,255,1) 52%, rgba(69,186,252,1) 89%);
+        margin: 0;
+        padding: 2rem 0.6rem;
+        list-style: none;
+        transition: 0.3s;
+        height: 10%;
+        text-align: center;
+        font-size: 1.5rem;
+        border-bottom: 0.094rem solid #ffff;
+
+    }
+
+    .menu-mobile ul li a {
+        text-decoration: none;
+        color: #ffff; 
+        font-weight: 700;
+        transition-duration: 0.4s;
+    }
+
+    /* .menu-mobile ul li a:hover {
+        color: #1f1d1a;
+    } */
+
+    .navbar {
+        gap: 40%;
+
+    }
+
+    .section-hero .icono img {
+        width: 50%;
+
+    }
+
+    .texto-hero h1 {
+        font-size: 4rem;
+        line-height: 3rem;
+
+    }
+
+    .texto-hero h1 span {
+        font-size: 3rem;
+    }
+
+    .texto-hero .boton {
+        width: 30%;
+        font-size: 1.2rem;
+    }
+
+    .seguinos {
+        margin-top: 13rem;
+    }
+
+    .seguinos a {
+        font-size: 1rem;
+    }
+
+    .seguinos .fa-instagram {
+        font-size: 1rem;
+    }
+
+    .contact-formContainer {
+        grid-template-columns: 1fr;
+        gap: 5%
+    }
+
+    footer {
+        font-size: 1rem;
+    }
+
+    .container-beneficios .fa-instagram {
+        font-size: 1.75rem;
+        margin: 8rem;
+    }
+}
+   
+@media screen and (max-width: 576px) {
+
+        :root {
+            --padding-x: 2rem;
+
+        }
+
+        .texto-hero .boton{
+            width: 38%;
+            font-size: 1.2rem;
+
+        }
+
+        .section-title,
+        .title-beneficios {
+            font-size: 2.5rem;
+
+        }
+
+        .container h3,
+        p {
+            font-size: 1.2rem;
+        }
+
+        .beneficios-card-text h3 {
+            font-size: 1.6rem;
+
+        }
+
+        .container-beneficios .fa-instagram {
+            font-size: 1rem;
+            margin-top: 8rem;
+        }
+
+        .container-beneficios a {
+            font-size: 1rem;
+
+        }
+
+        .contact-formContainer-form .boton {
+            width: 38%;
+            font-size: 1.2rem;
+        }
+
+
+        .container-footer {
+            height: 10rem;
+        }
+
+        .container-footer footer {
+            flex-direction: column;
+            justify-content: center;
+            gap: 5%;
+        }
+
+        .container-footer footer .iconos {
+            height: auto;
+        }
+
+        .container-footer footer .copy {
+            font-size: 0.8rem;
+            margin-top: 1rem;
+        }
+
+        .navbar {
+            padding: 1.25rem 1.30rem;
+        }
+    
+}
+
+@media screen and (max-width: 522px) { 
+    .texto-hero .boton{
+        width: 45%;
+        font-size: 1rem;
+
+    }
+
+    .contact-formContainer-form .boton {
+        width: 45%;
+        font-size: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    .texto-hero .boton {
+        width: 45%;
+        font-size: 1rem
+    }
+
+    .contact-formContainer-form .boton {
+        width: 45%;
+        font-size: 1rem;
+    }
+
+
+
+}
+
+@media screen and (max-width: 375px) {
+    :root {
+        --padding-x: 1.5rem;
+    }
+
+    .texto-hero h1 {
+        font-size: 3rem;
+        line-height: 2.3rem
+    }
+
+    .texto-hero h1 span {
+        font-size: 2rem;
+    }
+
+    .section-title,
+    .title-beneficios {
+        font-size: 1.7rem;
+    }
+
+    .container h3,
+    p {
+        font-size: 1rem;
+    }
+
+    .contact-formContainer-form form input,
+    textarea {
+        width: 100%;
+    }
+
+    .navbar {
+        padding: 1.25rem 1.30rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .navbar {
+        padding: 1.25rem 1.30rem;
+    }
+
+    .texto-hero .boton {
+        width: 52%;
+
+    }
+
+    .contact-formContainer-form .boton {
+        width: 50%;
+
+    }
+
+    .contact-formContainer-form form input,
+    textarea {
+        width: 100%;
+    }
+
+}
